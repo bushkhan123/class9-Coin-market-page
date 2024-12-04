@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin market</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-gray-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Coin Market</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Trending</a></li>
+                    <li><a href="#" class="hover:text-gray-300">News</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Coin Market Table -->
+    <main class="container mx-auto py-8 px-4">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Top Cryptocurrencies</h2>
+            <table class="w-full table-auto">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="py-3 px-4 text-left font-medium text-gray-600">#</th>
+                        <th class="py-3 px-4 text-left font-medium text-gray-600">Coin</th>
+                        <th class="py-3 px-4 text-left font-medium text-gray-600">Price</th>
+                        <th class="py-3 px-4 text-left font-medium text-gray-600">Market Cap</th>
+                        <th class="py-3 px-4 text-left font-medium text-gray-600">24h Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Coin Row 1 -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700">1</td>
+                        <td class="py-3 px-4 flex items-center space-x-2 text-gray-700">
+                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin" class="w-6 h-6">
+                            <span>Bitcoin</span>
+                        </td>
+                        <td class="py-3 px-4 text-gray-700">$55,000</td>
+                        <td class="py-3 px-4 text-gray-700">$1 Trillion</td>
+                        <td class="py-3 px-4 text-green-500">+2.3%</td>
+                    </tr>
+                    <!-- Coin Row 2 -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700">2</td>
+                        <td class="py-3 px-4 flex items-center space-x-2 text-gray-700">
+                            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum" class="w-6 h-6">
+                            <span>Ethereum</span>
+                        </td>
+                        <td class="py-3 px-4 text-gray-700">$4,000</td>
+                        <td class="py-3 px-4 text-gray-700">$450 Billion</td>
+                        <td class="py-3 px-4 text-red-500">-1.1%</td>
+                    </tr>
+                    <!-- Coin Row 3 -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700">3</td>
+                        <td class="py-3 px-4 flex items-center space-x-2 text-gray-700">
+                            <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana" class="w-6 h-6">
+                            <span>Solana</span>
+                        </td>
+                        <td class="py-3 px-4 text-gray-700">$150</td>
+                        <td class="py-3 px-4 text-gray-700">$45 Billion</td>
+                        <td class="py-3 px-4 text-green-500">+5.5%</td>
+                    </tr>
+                    <!-- Coin Row 4 -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700">4</td>
+                        <td class="py-3 px-4 flex items-center space-x-2 text-gray-700">
+                            <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png" alt="Binance Coin" class="w-6 h-6">
+                            <span>Binance Coin</span>
+                        </td>
+                        <td class="py-3 px-4 text-gray-700">$400</td>
+                        <td class="py-3 px-4 text-gray-700">$70 Billion</td>
+                        <td class="py-3 px-4 text-red-500">-2.3%</td>
+                    </tr>
+                    <!-- Coin Row 5 -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700">5</td>
+                        <td class="py-3 px-4 flex items-center space-x-2 text-gray-700">
+                            <img src="https://cryptologos.cc/logos/ripple-xrp-logo.png" alt="Ripple" class="w-6 h-6">
+                            <span>Ripple</span>
+                        </td>
+                        <td class="py-3 px-4 text-gray-700">$1.25</td>
+                        <td class="py-3 px-4 text-gray-700">$60 Billion</td>
+                        <td class="py-3 px-4 text-green-500">+3.1%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-600 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Coin Market. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+Key Features of This Page:
+Header: A fixed header with a title ("Coin Market") and a simple navigation menu. It uses Tailwind's flexbox utilities to align the content.
+
+Coin Market Table:
+
+Displays cryptocurrency data such as rank, name, price, market cap, and 24-hour price change.
+Uses responsive design, so the table will adjust according to screen size.
+Each coin row shows an image of the coin's logo, and price/market cap values are displayed with some styling.
+The "24h Change" column uses color codes (green for positive, red for negative) to indicate the price change over the last 24 hours.
+Footer: A simple footer at the bottom with a copyright message.
+
+How to Extend:
+Fetching Real Data: To populate the table dynamically with real-time data, you can integrate a cryptocurrency API like CoinGecko API or CoinMarketCap API.
+Pagination: If you need to display more than 5 rows, you could implement pagination to show data in pages.
+Sorting: Add sorting functionality to the table by columns (price, market cap, etc.).
+Styling: You can further customize this layout by adjusting Tailwind's utilities, like colors, padding, borders, etc., to match your project's branding.
+Example for API Integration:
+If you want to fetch real-time data (e.g., from the CoinGecko API), you could use JavaScript to get the data and update the table dynamically.
+
+Here’s an example of how to fetch the data with JavaScript and populate the table:
+
+html
+Copy code
+<script>
+    async function fetchCryptoData() {
+        const response = await fetch('https://api.coingecko.com/api/v3/coins/markets', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            // Replace with your preferred currency, here using USD
+            body: JSON.stringify({ vs_currency: 'usd', order: 'market_cap_desc', per_page: 5 })
+        });
+        const data = await response.json();
+
+        // Populate table rows with real data
+        const tableBody = document.querySelector('tbody');
+        tableBody.innerHTML = '';} // Clear
